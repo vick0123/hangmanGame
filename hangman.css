@@ -1,0 +1,134 @@
+@font-face {
+    font-family: alice;
+    src: url(AinW.ttf);
+  }
+
+body {
+    background-image: url('wonderland.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+  }
+  .readability{
+    background-color: rgba(80, 80, 80, 0.521);
+    border-radius: 5%;
+    padding: 2%;
+    margin: auto;
+    max-width: 710px;
+
+  }
+  main {
+    max-width: 710px;
+    margin: auto;
+  }
+  
+  h1 , h2 {
+    line-height: 0.5;
+    font-family: alice;
+    font-size: 55px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .win {
+    font-family: alice;
+    text-align: center;
+    color: white;
+    background-color: green;
+  }
+  
+  .loss {
+    font-family: alice;
+    text-align: center;
+    color: white;
+    background-color: red;
+  }
+  
+  #word {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 24pt;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace
+  }
+  
+  #guesses {
+    text-align: center;
+    font-size: 16pt;
+    color: rgb(255, 255, 255);
+    font-family: alice;
+  }
+  
+  .guess {
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid rgb(85, 85, 85);
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (min-device-width: 375px ) and (max-device-width: 667px) {
+      #guesses {
+      text-align: center;
+      font-size: 24pt;
+      color: rgb(116, 116, 116);
+      font-weight: bold;
+      font-family: "Courier New", Courier, monospace
+    }
+  
+    .guess {
+      padding: 30px;
+      display: inline-block;
+      border: 2px solid rgb(255, 255, 153);
+      border-radius: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  }
+  
+  #guessBox {
+      height: 60px;
+      border-radius: 10px;
+      padding-top: 5px;
+      font-size: 18pt;
+      width: 200px;
+      padding-left: 10px;
+  }
+  
+  #controls{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+  }
+  #hangmanImage{
+    width: 500px; 
+    height: 380px;
+    border-radius: 10px;
+  }
+
+  /* Buttons */
+  .button {
+    font-family: alice;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 134, 127, 0.534);
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .button:hover {background-color: rgb(0, 140, 158)}
+  
+  .button:active {
+    background-color: rgb(224, 224, 139);
+    box-shadow: 0 5px rgba(0, 140, 158, 0.425);
+    transform: translateY(4px);
+  }
